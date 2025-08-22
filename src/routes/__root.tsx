@@ -1,3 +1,4 @@
+import CssBaseline from "@mui/joy/CssBaseline";
 import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { createRootRouteWithContext, Link, Outlet } from "@tanstack/react-router";
@@ -14,6 +15,7 @@ export const Route = createRootRouteWithContext<RootRouterContext>()({
 function RootComponent() {
   return (
     <>
+      <CssBaseline />
       <div className="flex gap-2 p-2">
         <Link to="/" className="[&.active]:font-bold">
           Home
